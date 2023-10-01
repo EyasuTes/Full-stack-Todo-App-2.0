@@ -1,0 +1,36 @@
+POST http://localhost:3001/users
+
+###
+POST http://localhost:3001/register
+Content-Type: application/json
+
+{
+    "name":"eyasu",
+    "email":"12233@gmail.com",
+    "password":"123"
+}
+###
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+     "email": "1@gmail.com",
+     "password":"123456"
+     
+}
+###
+POST http://localhost:3001/createtodo/user/6513d76d47e4a5e79e9dcd98
+Content-Type: application/json
+
+{
+    "text": "task one apc1122334455"
+}
+
+###
+GET http://localhost:3001/todos
+
+###
+DELETE  http://localhost:3001/deletetodo/650f301fa6ef9ecf92420671
+
+###
+PUT http://localhost:3001/editTodo/6511e94a010b1984a5842c42

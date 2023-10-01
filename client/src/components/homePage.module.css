@@ -1,0 +1,241 @@
+.container{
+    padding: 64px;
+    transition: 0.5s;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logout{
+    appearance: none;
+	border: none;
+	outline: none;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 24px rgba(0,0,0,0.2);
+    font-size: 16px;
+    color: var(--light);
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+.h1{
+    font-size: 46px;
+
+}
+.checkbox{
+    border-radius: 999px;
+    background-color: var(--light-alt);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.todo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+    margin: 32px;
+    border-radius: 8px;
+    padding: 16px;
+    transition: visibility 0.3s, opacity 0.3s ease;
+    transition: 0.5s;
+    
+
+}
+.basicDetail{
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s;
+    transition: visibility 0.3s, opacity 0.3s ease;
+}
+.date{
+    position: relative;
+    padding-top: 20px ;
+   
+
+    
+    
+}
+.todo.iscomplete .checkbox{
+    background-image: linear-gradient(to bottom, var(--primary), var(--secondary));;
+}
+.todo.iscomplete .text{
+    text-decoration: line-through;
+}
+.delete{
+    position: absolute;
+    right: 18px;
+    background-color: var(--primary);
+    border-radius: 999px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--light);
+    padding: 32px;
+    border-radius: 8px;
+}
+.h3{
+    color: black;
+    font-weight: 750;
+}
+.popupInput{
+    appearance: none;
+	border: none;
+	outline: none;
+    background-color: #fff;
+    box-shadow: 0px 2px 24px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 20px;
+    margin: 10px;
+}
+.closePopup{
+    position: absolute;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    border-radius: 999px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.popupButton{
+    appearance: none;
+	border: none;
+	outline: none;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 24px rgba(0,0,0,0.2);
+    font-size: 16px;
+    color: var(--light);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+.dateInputContainer{
+    display: flex;
+    color: var(--dark);
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.plusButton{
+    position: fixed;
+	bottom: 32px;
+	right: 32px;
+    font-size: 42px;
+	border-radius: 50%;
+	background-image:  linear-gradient(to bottom, var(--primary), var(--secondary));
+	width: 78px;
+	height: 78px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+}
+.dropdown{
+    margin-right: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.dateContainer{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--secondary);
+    margin-top: 15px;
+    padding: 10px;
+    font-size: large;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    
+}
+.mainContainer{
+    position: relative;
+    display: flex;
+    
+    width: 100%;
+    transition: 0.5s;
+    
+}
+.todoList{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+   
+    
+   
+}
+.todoTitle{
+    position:relative;
+    top: 20px;
+    left: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin: 20px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.toolbar{
+    position: relative;
+    transition: 0.5s;
+    top: 30px;
+
+}
+.toolbarOptions{
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+.toolbarOption{
+    background-color: var(--dark);
+    white-space: nowrap;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+.toolbarButton{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    border-radius: 8px;
+}
+.toolbarButton:hover{
+    color: var(--dark);
+    background-color: var(--light);
+
+}
+.toolbarOption:hover{
+    color: var(--dark);
+    background-color: var(--light);
+}
