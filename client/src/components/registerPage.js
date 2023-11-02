@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import register from './registerPage.module.css'
-const API_BASE= 'http://localhost:3001'
+const API_BASE= 'https://mern-taskapp-backend3.onrender.com'
 const Register =()=>{
     const [email, setEmail]=useState('')
     const [name, setName]=useState('')

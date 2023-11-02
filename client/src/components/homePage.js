@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import home from './homePage.module.css'
 import moment from 'moment'
 import {CaretDown, List} from 'phosphor-react';
-const API_BASE= 'http://localhost:3001'
+const API_BASE= 'https://mern-taskapp-backend3.onrender.com'
 const Home =()=>{
     
     const [popup, setPopup] =useState(false)

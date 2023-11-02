@@ -88,7 +88,7 @@ app.post('/register', async (req,res)=>{
 app.post('/login',async (req,res)=>{
     const {email, password}=req.body
     const user = await User.find({email:email}).populate('todos')
-    console.log(user)
+    
     let isMatch=true;
     if(user[0]){
         isMatch =await bcrypt.compare(password,user[0].password)
